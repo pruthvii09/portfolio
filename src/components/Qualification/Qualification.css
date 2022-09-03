@@ -1,0 +1,116 @@
+.qualification_container {
+    max-width: 768px;
+}
+
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.qualification__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: rgb(75, 75, 75);
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.qualification__button:hover {
+    color: black;
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+}
+
+.qualification__active {
+    color: black;
+}
+
+.qualification__sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.qualification__content {
+    display: none;
+}
+
+.qualifictaion__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualification__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    opacity: 0.7;
+}
+
+.qualification__calendar {
+    font-size: var(--small-font-size);
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(92, 92, 92);
+    border-radius: 50%;
+}
+
+.qualification__calender {
+    opacity: 0.7;
+}
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(92, 92, 92);
+    transform: translate(6px, -7px);
+    z-index: -1;
+}
+
+/* ===================   BreakPoints   ================ */
+
+
+/* For Larger devices */
+@media screen and (max-width:992px) {
+    .qualification_container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .qualification_container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .qualification__sections {
+        grid-template-columns: initial;
+    }
+
+    .qualification__button {
+        margin: 0 0.75rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .qualification__data {
+        gap: 0.5rem;
+    }
+}
